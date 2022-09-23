@@ -1,0 +1,17 @@
+@import "../../style.scss";
+
+.WelcomeTitle {
+    h2 {
+        font-size: 25pt;
+        font-weight: 400;
+        margin: 5rem 0;
+        text-align: center;
+    }
+
+    @include mediaScreenUnder($breakpointXs) {
+        h2 {
+            font-size: 18pt;
+            margin: 3rem;
+        }
+    }
+}

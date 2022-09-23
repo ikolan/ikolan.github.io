@@ -1,0 +1,26 @@
+@import "../../style.scss";
+
+.ProjectBox {
+    display: flex;
+    align-items: center;
+    margin: 4rem 0;
+    white-space: pre-line;
+
+    .description {
+        margin-left: 1rem;
+
+        .Title {
+            margin-bottom: 10px;
+        }
+    }
+
+    @include mediaScreenUnder($breakpointSm) {
+        flex-direction: column;
+        margin: 2rem 0;
+
+        .description {
+            margin: 0;
+            width: 100%;
+        }
+    }
+}

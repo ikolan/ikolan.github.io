@@ -1,0 +1,57 @@
+@import "../../style.scss";
+
+.SkillDescription {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 6rem 0;
+
+    .section {
+        background-color: $backgroundColor;
+        border: $backgroundAccentColor solid 1px;
+        border-radius: 0.5rem;
+        box-shadow: $backgroundAccentColor 0 0.5rem 0.7rem;
+        margin: 1.5rem;
+        min-width: 7rem;
+
+        .title {
+            font-size: 12pt;
+            font-weight: 700;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        hr {
+            border-color: $backgroundColor;
+        }
+
+        .skills {
+            padding: 0.5rem;
+            text-align: center;
+
+            p {
+                margin: 0.3rem 0;
+            }
+        }
+    }
+
+    @include mediaScreenUnder($breakpointXs) {
+        flex-flow: column nowrap;
+        margin: 2rem 0;
+        padding: 0 1rem;
+
+        .section {
+            margin: 0.3rem 0;
+            width: 100%;
+
+            .title {
+                padding: 0.3rem;
+            }
+
+            .skills {
+                padding: 0.3rem;
+            }
+        }
+    }
+}

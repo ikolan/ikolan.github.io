@@ -1,0 +1,26 @@
+@import "../../style.scss";
+
+.Title {
+    h3 {
+        font-weight: 300;
+        font-size: 20pt;
+
+        &::first-letter {
+            font-weight: 700;
+        }
+    }
+
+    .underline {
+        background-color: $primaryColor;
+        border-radius: 5px;
+        height: 5px;
+        margin-top: 5px;
+        width: 100px;
+    }
+
+    @include mediaScreenUnder($breakpointXs) {
+        h3 {
+            font-size: 17pt;
+        }
+    }
+}

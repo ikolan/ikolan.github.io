@@ -1,0 +1,33 @@
+@import "../../style.scss";
+
+$transition: linear 100ms;
+
+.SocialIcon a {
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0 6px;
+    padding: 6px;
+    transition: $transition;
+
+    i {
+        color: $primaryColor;
+        font-size: 38px;
+        transition: $transition;
+    }
+
+    &:hover {
+        background-color: $primaryColor;
+        transition: $transition;
+
+        i {
+            color: $textColor;
+            transition: $transition;
+        }
+    }
+
+    @include mediaScreenUnder($breakpointSm) {
+        i {
+            font-size: 56px;
+        }
+    }
+}

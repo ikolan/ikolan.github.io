@@ -1,0 +1,20 @@
+// Colors
+$backgroundColor: #31363b;
+$backgroundAccentColor: #1a1f23;
+$textColor: white;
+$primaryColor: #52a8da;
+
+// Fonts
+$font: "Inter", sans-serif;
+
+// Breakpoints
+$breakpointXs: 576px;
+$breakpointSm: 768px;
+$breakpointMd: 992px;
+$breakpointLg: 1200px;
+
+@mixin mediaScreenUnder($breakpoint) {
+    @media screen and (max-width: $breakpoint) {
+        @content;
+    }
+}

@@ -1,0 +1,42 @@
+@import "../../style.scss";
+
+.Introduction {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3rem 0;
+
+    .logo {
+        animation: Introduction-logoFloat 7s infinite ease-in-out;
+        flex-shrink: 0;
+        margin: 3rem;
+        width: 12rem;
+    }
+
+    .text {
+        font-size: 15pt;
+        text-align: center;
+        white-space: pre-line;
+    }
+
+    @include mediaScreenUnder($breakpointSm) {
+        flex-direction: column;
+        align-items: center;
+
+        .text {
+            font-size: 14pt;
+        }
+    }
+}
+
+@keyframes Introduction-logoFloat {
+    0% {
+        transform: translateY(-1rem) scale(0.9);
+    }
+    50% {
+        transform: translateY(1rem) scale(1);
+    }
+    100% {
+        transform: translateY(-1rem) scale(0.9);
+    }
+}

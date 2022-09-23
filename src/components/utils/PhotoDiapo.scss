@@ -1,0 +1,37 @@
+@import "../../style.scss";
+
+$borderRadius: 1rem;
+$height: 9rem;
+$width: 16rem;
+
+.PhotoDiapo {
+    border: $backgroundAccentColor solid 1px;
+    border-radius: $borderRadius;
+    flex-shrink: 0;
+    height: $height;
+    width: $width;
+
+    .image,
+    .old-image {
+        background-position: center;
+        background-size: cover;
+        border-radius: $borderRadius;
+        height: 100%;
+        width: 100%;
+    }
+
+    .image {
+        background-color: $backgroundColor;
+        box-shadow: $backgroundAccentColor 0 3px 5px;
+    }
+
+    .old-image {
+        bottom: 100%;
+        position: relative;
+    }
+
+    @include mediaScreenUnder($breakpointSm) {
+        align-self: center;
+        margin-bottom: 20px;
+    }
+}

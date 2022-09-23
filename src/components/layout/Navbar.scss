@@ -1,0 +1,65 @@
+@import "../../style.scss";
+
+$menuTransition: linear 200ms;
+
+.Navbar {
+    align-items: center;
+    background-image: linear-gradient($backgroundColor 60%, transparent);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+    .socials {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    @include mediaScreenUnder($breakpointSm) {
+        background-image: linear-gradient($backgroundColor 80%, transparent);
+        padding: 5px;
+        width: 100%;
+
+        .socials {
+            display: none;
+        }
+
+        .menu {
+            color: $textColor;
+            display: flex;
+            height: 32px;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            transition: $menuTransition;
+            width: 32px;
+
+            &.open {
+                color: $primaryColor;
+                font-size: 1.4rem;
+            }
+
+            .content {
+                background-color: $backgroundColor;
+                border: $backgroundAccentColor solid 1px;
+                border-radius: 0.5rem;
+                box-shadow: $backgroundAccentColor 0 0.5rem 1rem;
+                display: flex;
+                padding: 0.1rem;
+                position: absolute;
+                top: 3rem;
+                right: -100%;
+                transition: $menuTransition;
+            }
+
+            &.open .content {
+                right: 1rem;
+            }
+        }
+    }
+}

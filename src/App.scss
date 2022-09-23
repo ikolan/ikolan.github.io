@@ -1,0 +1,19 @@
+@import "style.scss";
+
+.App {
+    .container {
+        display: flex;
+        justify-content: center;
+        padding-top: 6rem;
+    }
+
+    ::selection {
+        background-color: $primaryColor;
+    }
+
+    @include mediaScreenUnder($breakpointSm) {
+        .container {
+            padding-top: 3rem;
+        }
+    }
+}

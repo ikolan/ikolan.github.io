@@ -1,0 +1,40 @@
+@import "../../style.scss";
+
+.SkillIcons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 6rem 0;
+    width: 100%;
+
+    .icon {
+        align-items: center;
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        margin: 0 10px;
+    }
+
+    .icon:only-child {
+        width: 100%;
+    }
+
+    .icon-mobile {
+        display: none;
+    }
+
+    @include mediaScreenUnder($breakpointSm) {
+        flex-flow: row wrap;
+        margin: 2rem 0;
+
+        .icon {
+            display: none;
+        }
+
+        .icon-mobile {
+            display: initial;
+            margin: 1.5rem;
+            width: 3rem;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@import "../../style.scss";
+
+.Background {
+    width: 100%;
+
+    svg {
+        position: fixed;
+        z-index: -1;
+
+        polygon {
+            fill: $backgroundAccentColor;
+        }
+    }
+}

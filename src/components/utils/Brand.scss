@@ -1,0 +1,27 @@
+@import "../../style.scss";
+
+.Brand {
+    h1 {
+        color: $textColor;
+        font-size: 25pt;
+        font-weight: 300;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    .underline {
+        background-color: $primaryColor;
+        border-radius: 5px;
+        height: 5px;
+        margin-top: 5px;
+        width: 100px;
+    }
+
+    @include mediaScreenUnder($breakpointXs) {
+        h1 {
+            font-size: 20pt;
+        }
+    }
+}

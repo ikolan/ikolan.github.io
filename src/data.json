@@ -1,0 +1,78 @@
+{
+    "introduction": "Bienvenue sur mon portfolio.\n\nPassionné par l'informatique et la programmation, j'ai tout d'abord appris les rudiments du code en autodidacte avant de décider d'en faire mon métier.\n\nJe suis actuellement en formation pour devenir développeur web PHP.\n\n",
+    "projects": [
+        {
+            "title": "Projet Incubateur",
+            "description": "Projet réalisé durant un atelier appelé \"Incubateur du Numérique\" dont le but est de réalisé un projet en équipe (2 développeurs et 1 graphiste) dans une durée de 4 mois. \n \n Technologies: \n React, Axios, Redux, Tailwind CSS, PHP/Symfony, API Platform, Postgres, Docker.",
+            "images": [
+                "Incubateur0",
+                "Incubateur1",
+                "Incubateur2",
+                "Incubateur3",
+                "Incubateur4",
+                "Incubateur5",
+                "Incubateur6",
+                "Incubateur7"
+            ],
+            "links": [
+                {
+                    "name": "Github",
+                    "href": "https://github.com/ikolan/incubateur-ecommerce",
+                    "iconClasses": "fa-brands fa-github"
+                }
+            ]
+        },
+        {
+            "title": "Projet MS PHP Afpa",
+            "description": "Projet réalisé dans un module de spécialisation PHP avec le framework Symfony et Twig. \n \n Technologies: \n PHP/Symfony, Twig, MySQL.",
+            "images": [
+                "MSAfpa0",
+                "MSAfpa1",
+                "MSAfpa2",
+                "MSAfpa3",
+                "MSAfpa4",
+                "MSAfpa5"
+            ],
+            "links": [
+                {
+                    "name": "Github",
+                    "href": "https://github.com/ikolan/ms-afpa-php-ecommerce",
+                    "iconClasses": "fa-brands fa-github"
+                }
+            ]
+        }
+    ],
+    "skills": {
+        "icons": [
+            "cli.svg",
+            "php.svg",
+            "css3.svg",
+            "html5.svg",
+            "js.svg",
+            "symfony.svg",
+            "linux.svg"
+        ],
+        "sections": [
+            {
+                "name": "Langages",
+                "skills": ["HTML", "CSS / SASS", "JavaScript", "PHP"]
+            },
+            {
+                "name": "Framework Front-end",
+                "skills": ["React", "Axios", "Twig"]
+            },
+            {
+                "name": "Framework Back-end",
+                "skills": ["Symfony"]
+            },
+            {
+                "name": "Outils",
+                "skills": ["Linux", "Git"]
+            }
+        ]
+    },
+    "socials": {
+        "github": "https://www.github.com/ikolan",
+        "linkedin": "https://www.linkedin.com/in/nicolas-benoit-59390/"
+    }
+}
