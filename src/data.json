@@ -66,6 +66,10 @@
                 "skills": ["Symfony"]
             },
             {
+                "name": "Base de données",
+                "skills": ["MySQL", "PostgreSQL"]
+            },
+            {
                 "name": "Outils",
                 "skills": ["Linux", "Git"]
             }

@@ -19,7 +19,7 @@ export default function SkillIcons({ icons }) {
                     >
                         {icon.content}
                     </div>
-                    <div className="icon-mobile">{icon.content}</div>
+                    <div className="iconMobile">{icon.content}</div>
                 </React.Fragment>
             );
         });

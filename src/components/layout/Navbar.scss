@@ -30,9 +30,11 @@ $menuTransition: linear 200ms;
         }
 
         .menu {
+            border-radius: 0.4rem;
             color: $textColor;
             display: flex;
             height: 32px;
+            margin-right: 0.5rem;
             justify-content: center;
             align-items: center;
             font-size: 1.5rem;
@@ -40,14 +42,18 @@ $menuTransition: linear 200ms;
             width: 32px;
 
             &.open {
+                background-color: transparentize(
+                    $color: $primaryColor,
+                    $amount: 0.8
+                );
                 color: $primaryColor;
-                font-size: 1.4rem;
+                font-size: 1rem;
             }
 
             .content {
                 background-color: $backgroundColor;
                 border: $backgroundAccentColor solid 1px;
-                border-radius: 0.5rem;
+                border-radius: 0.5rem 0 0 0.5rem;
                 box-shadow: $backgroundAccentColor 0 0.5rem 1rem;
                 display: flex;
                 padding: 0.1rem;
@@ -58,7 +64,7 @@ $menuTransition: linear 200ms;
             }
 
             &.open .content {
-                right: 1rem;
+                right: 0;
             }
         }
     }
