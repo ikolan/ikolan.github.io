@@ -53,6 +53,7 @@ $menuTransition: linear 200ms;
             .content {
                 background-color: $backgroundColor;
                 border: $backgroundAccentColor solid 1px;
+                border-right: 0;
                 border-radius: 0.5rem 0 0 0.5rem;
                 box-shadow: $backgroundAccentColor 0 0.5rem 1rem;
                 display: flex;

@@ -52,7 +52,7 @@ export default function PhotoDiapo({ images = [], isVisible }) {
     useEffect(() => (isVisible ? play() : pause()), [isVisible]);
 
     return (
-        <div className={"PhotoDiapo"}>
+        <div className="PhotoDiapo">
             <div
                 className="image"
                 style={{

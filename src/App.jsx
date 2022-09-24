@@ -20,9 +20,7 @@ export default function App() {
             <Navbar />
             <div className="container">
                 <MainContainer>
-                    <WelcomeTitle>
-                        Bonjour, <br /> je suis développeur web.
-                    </WelcomeTitle>
+                    <WelcomeTitle />
                     <Section title="Introduction">
                         <Introduction />
                     </Section>
