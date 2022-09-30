@@ -12,11 +12,23 @@ $menuTransition: linear 200ms;
     width: 100%;
     z-index: 1;
 
-    .socials {
+    > .socials {
         display: flex;
     }
 
-    .menu {
+    .menuEntry {
+        color: $textColor;
+        display: inline-block;
+        margin: 0 1rem;
+        text-decoration: none;
+
+        &:hover {
+            color: $primaryColor;
+            font-weight: 700;
+        }
+    }
+
+    .mobileMenu {
         display: none;
     }
 
@@ -25,11 +37,15 @@ $menuTransition: linear 200ms;
         padding: 5px;
         width: 100%;
 
-        .socials {
+        > .socials {
             display: none;
         }
 
         .menu {
+            display: none;
+        }
+
+        .mobileMenu {
             border-radius: 0.4rem;
             color: $textColor;
             display: flex;
@@ -37,7 +53,7 @@ $menuTransition: linear 200ms;
             margin-right: 0.5rem;
             justify-content: center;
             align-items: center;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             transition: $menuTransition;
             width: 32px;
 
@@ -47,7 +63,6 @@ $menuTransition: linear 200ms;
                     $amount: 0.8
                 );
                 color: $primaryColor;
-                font-size: 1rem;
             }
 
             .content {
@@ -56,12 +71,32 @@ $menuTransition: linear 200ms;
                 border-right: 0;
                 border-radius: 0.5rem 0 0 0.5rem;
                 box-shadow: $backgroundAccentColor 0 0.5rem 1rem;
-                display: flex;
                 padding: 0.1rem;
                 position: absolute;
                 top: 3rem;
                 right: -100%;
                 transition: $menuTransition;
+
+                > .socials {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .entries {
+                    .menuEntry {
+                        border: solid $backgroundAccentColor 1px;
+                        border-radius: 0.3rem;
+                        display: block;
+                        margin: 0.3rem;
+                        padding: 0.5rem 1rem;
+                        text-align: right;
+
+                        &:hover {
+                            color: $textColor;
+                            font-weight: initial;
+                        }
+                    }
+                }
             }
 
             &.open .content {

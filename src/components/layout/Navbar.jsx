@@ -22,29 +22,41 @@ const Icons = () => {
     );
 };
 
-const MobileMenu = () => {
+const MobileMenu = ({ menuEntries }) => {
     let [open, setOpen] = useState(false);
 
     const onClick = () => setOpen((open) => !open);
 
     return (
-        <div className={"menu " + (open ? "open" : "")} onClick={onClick}>
+        <div className={"mobileMenu " + (open ? "open" : "")} onClick={onClick}>
             <i className="fa-solid fa-bars"></i>
             <div className="content">
-                <Icons />
+                <div className="socials">
+                    <Icons />
+                </div>
+                <div className="entries">{menuEntries}</div>
             </div>
         </div>
     );
 };
 
-export default function Navbar() {
+export default function Navbar({ menu }) {
+    const menuEntries = menu.map((entry, index) => {
+        return (
+            <a className="menuEntry" href={"#" + entry.anchor} key={index}>
+                {entry.name}
+            </a>
+        );
+    });
+
     return (
         <div className="Navbar">
             <Brand firstName="Nicolas" lastName="Benoit" />
+            <div className="menu">{menuEntries}</div>
             <div className="socials">
                 <Icons />
             </div>
-            <MobileMenu />
+            <MobileMenu menuEntries={menuEntries} />
         </div>
     );
 }
