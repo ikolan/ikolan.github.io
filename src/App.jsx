@@ -11,20 +11,22 @@ import WelcomeTitle from "./components/utils/WelcomeTitle";
 import data from "./data.json";
 import "@fortawesome/fontawesome-free/css/brands.css";
 import "@fortawesome/fontawesome-free/css/fontawesome.css";
-import React from "react";
+import React, { useState } from "react";
 
 export default function App() {
+    const [menu, setMenu] = useState([]);
+
     return (
         <main className="App">
             <Background />
-            <Navbar />
+            <Navbar menu={menu} />
             <div className="container">
                 <MainContainer>
                     <WelcomeTitle />
-                    <Section title="Introduction">
+                    <Section title="À propos de moi" menuSetter={setMenu}>
                         <Introduction />
                     </Section>
-                    <Section title="Mes connaissances">
+                    <Section title="Mes connaissances" menuSetter={setMenu}>
                         <SkillIcons
                             icons={data.skills.icons.map((iconPath) => {
                                 return {
@@ -38,7 +40,7 @@ export default function App() {
                         />
                         <SkillDescription />
                     </Section>
-                    <Section title="Portfolio">
+                    <Section title="Portfolio" menuSetter={setMenu}>
                         <PortfolioProjects />
                     </Section>
                 </MainContainer>
