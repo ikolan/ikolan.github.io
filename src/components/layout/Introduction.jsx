@@ -1,5 +1,5 @@
 import laptopIcon from "../../assets/laptop.svg";
-import data from "../../data.json";
+import introduction from "../../data/introduction.json";
 import "./Introduction.scss";
 import React from "react";
 
@@ -10,7 +10,7 @@ export default function Introduction() {
                 <img src={laptopIcon} />
             </div>
             <div className="text">
-                <p>{data.introduction}</p>
+                <p>{introduction.map((line) => line + "\n")}</p>
             </div>
         </div>
     );

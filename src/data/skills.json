@@ -1,0 +1,33 @@
+{
+    "icons": [
+        "cli.svg",
+        "php.svg",
+        "css3.svg",
+        "html5.svg",
+        "js.svg",
+        "symfony.svg",
+        "linux.svg"
+    ],
+    "sections": [
+        {
+            "name": "Langages",
+            "skills": ["HTML", "CSS / SASS", "JavaScript", "PHP"]
+        },
+        {
+            "name": "Frameworks Front-end",
+            "skills": ["React", "Axios", "Twig"]
+        },
+        {
+            "name": "Framework Back-end",
+            "skills": ["Symfony"]
+        },
+        {
+            "name": "Bases de données",
+            "skills": ["MySQL", "PostgreSQL"]
+        },
+        {
+            "name": "Outils",
+            "skills": ["Linux", "Git"]
+        }
+    ]
+}

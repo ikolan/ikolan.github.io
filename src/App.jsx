@@ -8,7 +8,7 @@ import Background from "./components/utils/Background";
 import SkillDescription from "./components/utils/SkillDescription";
 import SkillIcons from "./components/utils/SkillIcons";
 import WelcomeTitle from "./components/utils/WelcomeTitle";
-import data from "./data.json";
+import skills from "./data/skills.json";
 import "@fortawesome/fontawesome-free/css/brands.css";
 import "@fortawesome/fontawesome-free/css/fontawesome.css";
 import React, { useState } from "react";
@@ -28,7 +28,7 @@ export default function App() {
                     </Section>
                     <Section title="Mes connaissances" menuSetter={setMenu}>
                         <SkillIcons
-                            icons={data.skills.icons.map((iconPath) => {
+                            icons={skills.icons.map((iconPath) => {
                                 return {
                                     content: (
                                         <img
