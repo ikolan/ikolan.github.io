@@ -21,10 +21,12 @@ $menuTransition: linear 200ms;
         display: inline-block;
         margin: 0 1rem;
         text-decoration: none;
+        transition: $menuTransition;
 
         &:hover {
             color: $primaryColor;
             font-weight: 700;
+            transition: $menuTransition;
         }
     }
 

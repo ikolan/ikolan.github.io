@@ -11,11 +11,11 @@
     "sections": [
         {
             "name": "Langages",
-            "skills": ["HTML", "CSS / SASS", "JavaScript", "PHP"]
+            "skills": ["HTML", "CSS", "SASS / SCSS", "JavaScript", "PHP", "SQL"]
         },
         {
             "name": "Frameworks Front-end",
-            "skills": ["React", "Axios", "Twig"]
+            "skills": ["React", "Axios", "Tailwind CSS", "Twig"]
         },
         {
             "name": "Framework Back-end",
