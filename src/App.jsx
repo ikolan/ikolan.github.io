@@ -8,6 +8,7 @@ import Background from "./components/utils/Background";
 import SkillDescription from "./components/utils/SkillDescription";
 import SkillIcons from "./components/utils/SkillIcons";
 import WelcomeTitle from "./components/utils/WelcomeTitle";
+import roles from "./data/roles.json";
 import skills from "./data/skills.json";
 import "@fortawesome/fontawesome-free/css/brands.css";
 import "@fortawesome/fontawesome-free/css/fontawesome.css";
@@ -22,7 +23,7 @@ export default function App() {
             <Navbar menu={menu} />
             <div className="container">
                 <MainContainer>
-                    <WelcomeTitle />
+                    <WelcomeTitle words={roles} />
                     <Section title="À propos de moi" menuSetter={setMenu}>
                         <Introduction />
                     </Section>
