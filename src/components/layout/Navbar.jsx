@@ -28,7 +28,7 @@ const MobileMenu = ({ menuEntries }) => {
     const onClick = () => setOpen((open) => !open);
 
     return (
-        <div className={"mobileMenu " + (open ? "open" : "")} onClick={onClick}>
+        <div className={"mobileMenu" + (open ? " open" : "")} onClick={onClick}>
             <i className="fa-solid fa-bars"></i>
             <div className="content">
                 <div className="socials">
