@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.086ba649.css",
-    "main.js": "/static/js/main.fee36fa6.js",
+    "main.css": "/static/css/main.cfe74f75.css",
+    "main.js": "/static/js/main.42f090cf.js",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.b48ad290d0335879a92b.ttf",
     "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.f9ee61fab3c11e2f3ed3.ttf",
     "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.66104b766c3d0462b3c5.woff2",
@@ -9,6 +9,7 @@
     "static/media/Incubateur1.min.jpg": "/static/media/Incubateur1.min.655d911bdf703a0e51bc.jpg",
     "static/media/Incubateur4.min.jpg": "/static/media/Incubateur4.min.435f20e44e64e95679f0.jpg",
     "static/media/Incubateur6.min.jpg": "/static/media/Incubateur6.min.de8ea92d9009dd2e49ac.jpg",
+    "static/media/Rust3D1.min.jpg": "/static/media/Rust3D1.min.b6ed42d39be319fa9aad.jpg",
     "static/media/Incubateur7.min.jpg": "/static/media/Incubateur7.min.cd54c1ebc794cde73ddd.jpg",
     "static/media/linux.svg": "/static/media/linux.245617d2959cd91a4225.svg",
     "static/media/symfony.svg": "/static/media/symfony.819344b1cc20de6741f5.svg",
@@ -21,7 +22,7 @@
     "static/media/css3.svg": "/static/media/css3.f6d6a416b9f89426bbf7.svg"
   },
   "entrypoints": [
-    "static/css/main.086ba649.css",
-    "static/js/main.fee36fa6.js"
+    "static/css/main.cfe74f75.css",
+    "static/js/main.42f090cf.js"
   ]
 }
