@@ -18,14 +18,14 @@ export default function WelcomeTitle({ words }) {
 
         setBlurred(false);
 
-        setBlurTimeout(setTimeout(() => setBlurred(true), 4500));
+        setBlurTimeout(setTimeout(() => setBlurred(true), 3000));
 
         setWordsTimeout(
             setTimeout(() => {
                 setCurrentWordIndex((index) =>
                     index >= words.length - 1 ? 0 : index + 1
                 );
-            }, 5000)
+            }, 3500)
         );
     }, [currentWordIndex]);
 
