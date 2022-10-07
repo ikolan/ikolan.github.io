@@ -27,7 +27,7 @@
         },
         {
             "name": "Outils",
-            "skills": ["Linux", "Git"]
+            "skills": ["Linux", "VS Code", "Git"]
         }
     ]
 }
