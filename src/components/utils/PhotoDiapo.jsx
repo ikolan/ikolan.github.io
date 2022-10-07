@@ -23,7 +23,7 @@ export default function PhotoDiapo({ images = [], isVisible }) {
                 } else {
                     setCurrentImageIndex((index) => index + 1);
                 }
-            }, 5000)
+            }, 3000)
         );
     };
 

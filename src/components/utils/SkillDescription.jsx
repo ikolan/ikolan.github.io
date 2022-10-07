@@ -1,11 +1,11 @@
-import data from "../../data.json";
+import skills from "../../data/skills.json";
 import "./SkillDescription.scss";
 import React from "react";
 
 export default function SkillDescription() {
     return (
         <div className="SkillDescription">
-            {data.skills.sections.map((section, index) => {
+            {skills.sections.map((section, index) => {
                 return (
                     <div
                         className="section"

@@ -3,6 +3,7 @@
 $transition: linear 100ms;
 
 .Link {
+    background-color: $backgroundColor;
     border: $backgroundAccentColor solid 1px;
     border-radius: 5px;
     box-shadow: $backgroundAccentColor 0 3px 5px;

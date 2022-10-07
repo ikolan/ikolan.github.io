@@ -1,5 +1,7 @@
 @import "../../style.scss";
 
+$blurredTransition: ease-in-out 500ms;
+
 .WelcomeTitle {
     h2 {
         font-size: 25pt;
@@ -10,6 +12,15 @@
 
         .bold {
             font-weight: 700;
+        }
+    }
+
+    span {
+        transition: $blurredTransition;
+
+        &.blurred {
+            filter: blur(1.5rem);
+            opacity: 0;
         }
     }
 

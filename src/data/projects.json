@@ -1,6 +1,5 @@
 {
-    "introduction": "Bienvenue sur mon portfolio.\n\nPassionné par l'informatique et la programmation, j'ai tout d'abord appris les rudiments du code en autodidacte avant de décider d'en faire mon métier.\n\nJe suis actuellement en formation pour devenir développeur web PHP.\n\n",
-    "projects": [
+    "portfolio" : [
         {
             "title": "Projet Incubateur",
             "description": "Projet réalisé durant un atelier appelé \"Incubateur du Numérique\" dont le but est de réalisé un site e-commerce en équipe (2 développeurs et 1 graphiste) dans une durée de 4 mois. \n \n Technologies: \n React, Axios, Redux, Tailwind CSS, PHP/Symfony, API Platform, Postgres, Docker.",
@@ -42,41 +41,23 @@
             ]
         }
     ],
-    "skills": {
-        "icons": [
-            "cli.svg",
-            "php.svg",
-            "css3.svg",
-            "html5.svg",
-            "js.svg",
-            "symfony.svg",
-            "linux.svg"
-        ],
-        "sections": [
-            {
-                "name": "Langages",
-                "skills": ["HTML", "CSS / SASS", "JavaScript", "PHP"]
-            },
-            {
-                "name": "Frameworks Front-end",
-                "skills": ["React", "Axios", "Twig"]
-            },
-            {
-                "name": "Framework Back-end",
-                "skills": ["Symfony"]
-            },
-            {
-                "name": "Bases de données",
-                "skills": ["MySQL", "PostgreSQL"]
-            },
-            {
-                "name": "Outils",
-                "skills": ["Linux", "Git"]
-            }
-        ]
-    },
-    "socials": {
-        "github": "https://www.github.com/ikolan",
-        "linkedin": "https://www.linkedin.com/in/nicolas-benoit-59390/"
-    }
+    "others": [
+        {
+            "title": "Rendu 3D simple en Rust",
+            "description": "Un simple rendu 3D écrit en Rust.",
+            "images": [
+                "Rust3D0",
+                "Rust3D1",
+                "Rust3D2",
+                "Rust3D3"
+            ],
+            "links": [
+                {
+                    "name": "Github",
+                    "href": "https://github.com/ikolan/rust-3d-test-project",
+                    "iconClasses": "fa-brands fa-github"
+                }
+            ]
+        }
+    ]
 }

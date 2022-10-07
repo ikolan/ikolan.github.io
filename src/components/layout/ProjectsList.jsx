@@ -1,10 +1,9 @@
-import data from "../../data.json";
 import Link from "../utils/Link";
 import ProjectBox from "../utils/ProjectBox";
 import React from "react";
 
-export default function PortfolioProjects() {
-    const projectBoxes = data.projects.map((projectData, index) => {
+export default function ProjectsList({ list }) {
+    const projectBoxes = list.map((projectData, index) => {
         return (
             <ProjectBox
                 title={projectData.title}

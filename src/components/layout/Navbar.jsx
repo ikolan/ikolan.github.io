@@ -1,4 +1,4 @@
-import data from "../../data.json";
+import links from "../../data/links.json";
 import Brand from "../utils/Brand";
 import SocialIcon from "../utils/SocialIcon";
 import "./Navbar.scss";
@@ -12,11 +12,11 @@ const Icons = () => {
         <>
             <SocialIcon
                 icon={<i className="fa-brands fa-github"></i>}
-                link={data.socials.github}
+                link={links.socials.github}
             />
             <SocialIcon
                 icon={<i className="fa-brands fa-linkedin"></i>}
-                link={data.socials.linkedin}
+                link={links.socials.linkedin}
             />
         </>
     );
@@ -28,7 +28,7 @@ const MobileMenu = ({ menuEntries }) => {
     const onClick = () => setOpen((open) => !open);
 
     return (
-        <div className={"mobileMenu " + (open ? "open" : "")} onClick={onClick}>
+        <div className={"mobileMenu" + (open ? " open" : "")} onClick={onClick}>
             <i className="fa-solid fa-bars"></i>
             <div className="content">
                 <div className="socials">
