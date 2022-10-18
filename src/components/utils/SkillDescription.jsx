@@ -7,12 +7,7 @@ export default function SkillDescription() {
         <div className="SkillDescription">
             {skills.sections.map((section, index) => {
                 return (
-                    <div
-                        className="section"
-                        data-aos="fade-up"
-                        data-aos-duration="1000"
-                        key={index}
-                    >
+                    <div className="section" key={index}>
                         <p className="title">{section.name}</p>
                         <hr />
                         <div className="skills">
