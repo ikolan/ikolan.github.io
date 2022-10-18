@@ -11,8 +11,6 @@ import WelcomeTitle from "./components/utils/WelcomeTitle";
 import projects from "./data/projects.json";
 import roles from "./data/roles.json";
 import skills from "./data/skills.json";
-import "@fortawesome/fontawesome-free/css/brands.css";
-import "@fortawesome/fontawesome-free/css/fontawesome.css";
 import React, { useState } from "react";
 
 export default function App() {
@@ -34,7 +32,7 @@ export default function App() {
                                 return {
                                     content: (
                                         <img
-                                            src={require(`./assets/skillIcons/${iconPath}`)}
+                                            src={require(`./assets/icons/${iconPath}`)}
                                         />
                                     ),
                                 };

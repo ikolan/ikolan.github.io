@@ -92,6 +92,14 @@ $menuTransition: linear 250ms;
                 color: $primaryColor;
             }
 
+            .button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0.3rem;
+                width: 2rem;
+            }
+
             .content {
                 background-color: $backgroundColor;
                 border: $backgroundAccentColor solid 1px;

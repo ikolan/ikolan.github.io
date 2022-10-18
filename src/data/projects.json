@@ -17,7 +17,7 @@
                 {
                     "name": "Github",
                     "href": "https://github.com/ikolan/incubateur-ecommerce",
-                    "iconClasses": "fa-brands fa-github"
+                    "icon": "Github"
                 }
             ]
         },
@@ -36,7 +36,7 @@
                 {
                     "name": "Github",
                     "href": "https://github.com/ikolan/ms-afpa-php-ecommerce",
-                    "iconClasses": "fa-brands fa-github"
+                    "icon": "Github"
                 }
             ]
         }
@@ -55,7 +55,7 @@
                 {
                     "name": "Github",
                     "href": "https://github.com/ikolan/rust-3d-test-project",
-                    "iconClasses": "fa-brands fa-github"
+                    "icon": "Github"
                 }
             ]
         }

@@ -7,20 +7,28 @@ $transition: linear 100ms;
     border: $backgroundAccentColor solid 1px;
     border-radius: 5px;
     box-shadow: $backgroundAccentColor 0 3px 5px;
-    display: inline;
+    display: inline-block;
     margin-right: 1rem;
-    padding: 2px;
     transition: $transition;
 
     a {
         color: $primaryColor;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.2rem 0.3rem;
         text-decoration: none;
-        padding: 5px;
         transition: $transition;
-    }
 
-    i {
-        margin-right: 5px;
+        svg {
+            margin-right: 5px;
+            width: 1rem;
+
+            path {
+                fill: $primaryColor;
+                transition: $transition;
+            }
+        }
     }
 
     &:hover {
@@ -30,6 +38,10 @@ $transition: linear 100ms;
         a {
             color: $textColor;
             transition: $transition;
+
+            svg path {
+                fill: $textColor;
+            }
         }
     }
 }

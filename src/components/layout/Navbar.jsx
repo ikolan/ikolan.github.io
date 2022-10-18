@@ -1,23 +1,19 @@
+import barsIcon from "../../assets/icons/bars.svg";
+import githubLogo from "../../assets/icons/github.svg";
+import linkedInLogo from "../../assets/icons/linkedin.svg";
 import links from "../../data/links.json";
+import { default as GithubIcon } from "../icons/Github";
+import { default as LinkedInIcon } from "../icons/LinkedIn";
 import Brand from "../utils/Brand";
 import SocialIcon from "../utils/SocialIcon";
 import "./Navbar.scss";
-import "@fortawesome/fontawesome-free/scss/brands.scss";
-import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
-import "@fortawesome/fontawesome-free/scss/solid.scss";
 import React, { useState } from "react";
 
 const Icons = () => {
     return (
         <>
-            <SocialIcon
-                icon={<i className="fa-brands fa-github"></i>}
-                link={links.socials.github}
-            />
-            <SocialIcon
-                icon={<i className="fa-brands fa-linkedin"></i>}
-                link={links.socials.linkedin}
-            />
+            <SocialIcon icon={<GithubIcon />} link={links.socials.github} />
+            <SocialIcon icon={<LinkedInIcon />} link={links.socials.linkedin} />
         </>
     );
 };
@@ -28,13 +24,18 @@ const MobileMenu = ({ menuEntries }) => {
     const onClick = () => setOpen((open) => !open);
 
     return (
-        <div className={"mobileMenu" + (open ? " open" : "")} onClick={onClick}>
-            <i className="fa-solid fa-bars"></i>
+        <div className={"mobileMenu" + (open ? " open" : "")}>
+            <div className="button" onClick={onClick}>
+                <img src={barsIcon} />
+            </div>
+
             <div className="content">
                 <div className="socials">
                     <Icons />
                 </div>
-                <div className="entries">{menuEntries}</div>
+                <div className="entries" onClick={onClick}>
+                    {menuEntries}
+                </div>
             </div>
         </div>
     );

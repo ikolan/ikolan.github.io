@@ -6,7 +6,7 @@ export default function Link({ children, href, icon }) {
         <div className="Link">
             <a href={href} target="_blank" rel="noreferrer">
                 {icon}
-                {children}
+                <p>{children}</p>
             </a>
         </div>
     );

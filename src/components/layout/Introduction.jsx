@@ -1,4 +1,4 @@
-import laptopIcon from "../../assets/laptop.svg";
+import laptopIcon from "../../assets/icons/laptop.svg";
 import introduction from "../../data/introduction.json";
 import "./Introduction.scss";
 import React from "react";

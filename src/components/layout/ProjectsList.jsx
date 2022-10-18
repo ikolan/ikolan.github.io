@@ -16,12 +16,9 @@ export default function ProjectsList({ list }) {
                 <br />
                 <br />
                 {projectData.links.map((linkData, index) => {
+                    const Icon = require("../icons/" + linkData.icon).default;
                     return (
-                        <Link
-                            href={linkData.href}
-                            icon={<i className={linkData.iconClasses}></i>}
-                            key={index}
-                        >
+                        <Link href={linkData.href} icon={<Icon />} key={index}>
                             {linkData.name}
                         </Link>
                     );

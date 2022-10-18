@@ -9,25 +9,23 @@ $transition: linear 100ms;
     padding: 6px;
     transition: $transition;
 
-    i {
-        color: $primaryColor;
-        font-size: 38px;
-        transition: $transition;
+    > svg {
+        display: block;
+        width: 2rem;
+
+        path {
+            fill: $primaryColor;
+            transition: $transition;
+        }
     }
 
     &:hover {
         background-color: $primaryColor;
         transition: $transition;
 
-        i {
-            color: $textColor;
+        > svg path {
+            fill: $textColor;
             transition: $transition;
-        }
-    }
-
-    @include mediaScreenUnder($breakpointSm) {
-        i {
-            font-size: 56px;
         }
     }
 }
