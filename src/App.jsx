@@ -25,7 +25,7 @@ export default function App() {
             <div className="container">
                 <MainContainer>
                     <WelcomeTitle words={roles} />
-                    <Section title="À propos de moi" menuSetter={setMenu}>
+                    <Section title="Introduction" menuSetter={setMenu}>
                         <Introduction />
                     </Section>
                     <Section title="Mes connaissances" menuSetter={setMenu}>
@@ -45,7 +45,7 @@ export default function App() {
                     <Section title="Portfolio" menuSetter={setMenu}>
                         <ProjectsList list={projects.portfolio} />
                     </Section>
-                    <Section title="Autre projets" menuSetter={setMenu}>
+                    <Section title="Autre créations" menuSetter={setMenu}>
                         <ProjectsList list={projects.others} />
                     </Section>
                 </MainContainer>
