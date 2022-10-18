@@ -11,3 +11,17 @@
 body {
     background-color: $backgroundColor;
 }
+
+html {
+    scrollbar-color: $primaryColor $backgroundAccentColor;
+
+    &::-webkit-scrollbar {
+        background-color: $backgroundAccentColor;
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $primaryColor;
+        border-radius: 3px;
+    }
+}
