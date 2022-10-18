@@ -12,6 +12,7 @@ import projects from "./data/projects.json";
 import roles from "./data/roles.json";
 import skills from "./data/skills.json";
 import React, { useState } from "react";
+import TrackVisibility from "react-on-screen";
 
 export default function App() {
     const [menu, setMenu] = useState([]);
@@ -22,7 +23,9 @@ export default function App() {
             <Navbar menu={menu} />
             <div className="container">
                 <MainContainer>
-                    <WelcomeTitle words={roles} />
+                    <TrackVisibility>
+                        <WelcomeTitle words={roles} />
+                    </TrackVisibility>
                     <Section title="Introduction" menuSetter={setMenu}>
                         <Introduction />
                     </Section>

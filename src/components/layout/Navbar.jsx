@@ -1,6 +1,4 @@
 import barsIcon from "../../assets/icons/bars.svg";
-import githubLogo from "../../assets/icons/github.svg";
-import linkedInLogo from "../../assets/icons/linkedin.svg";
 import links from "../../data/links.json";
 import { default as GithubIcon } from "../icons/Github";
 import { default as LinkedInIcon } from "../icons/LinkedIn";
