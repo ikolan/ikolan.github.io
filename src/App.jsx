@@ -4,6 +4,8 @@ import MainContainer from "./components/layout/MainContainer";
 import Navbar from "./components/layout/Navbar";
 import ProjectsList from "./components/layout/ProjectsList";
 import Section from "./components/layout/Section";
+import Tab from "./components/layout/Tab";
+import TabsContainer from "./components/layout/TabsContainer";
 import Background from "./components/utils/Background";
 import SkillDescription from "./components/utils/SkillDescription";
 import SkillIcons from "./components/utils/SkillIcons";
@@ -44,10 +46,14 @@ export default function App() {
                         <SkillDescription />
                     </Section>
                     <Section title="Portfolio" menuSetter={setMenu}>
-                        <ProjectsList list={projects.portfolio} />
-                    </Section>
-                    <Section title="Autre créations" menuSetter={setMenu}>
-                        <ProjectsList list={projects.others} />
+                        <TabsContainer>
+                            <Tab title="Sites Web">
+                                <ProjectsList list={projects.websites} />
+                            </Tab>
+                            <Tab title="Autre créations">
+                                <ProjectsList list={projects.others} />
+                            </Tab>
+                        </TabsContainer>
                     </Section>
                 </MainContainer>
             </div>

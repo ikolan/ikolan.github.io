@@ -1,0 +1,41 @@
+@import "../../style.scss";
+
+$transition: linear 250ms;
+
+.TabsContainer {
+    .tabsList {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2rem 0;
+
+        .tabButton {
+            font-size: 14pt;
+            transition: $transition;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &::after {
+                background-color: $primaryColor;
+                border-radius: 3px;
+                content: "";
+                display: block;
+                height: 5px;
+                margin: auto;
+                position: relative;
+                top: 0.4rem;
+                transition: $transition;
+                width: 5px;
+            }
+
+            &.active {
+                font-weight: 700;
+
+                &::after {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}

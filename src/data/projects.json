@@ -1,5 +1,5 @@
 {
-    "portfolio" : [
+    "websites" : [
         {
             "title": "Projet Incubateur",
             "description": "Projet réalisé durant un atelier appelé \"Incubateur du Numérique\" dont le but est de réalisé un site e-commerce en équipe (2 développeurs et 1 graphiste) dans une durée de 4 mois. \n \n Technologies: \n React, Axios, Redux, Tailwind CSS, PHP/Symfony, API Platform, Postgres, Docker.",

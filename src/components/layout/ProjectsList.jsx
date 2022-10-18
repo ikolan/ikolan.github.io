@@ -27,5 +27,5 @@ export default function ProjectsList({ list }) {
         );
     });
 
-    return <div className="PortfolioProjects">{projectBoxes}</div>;
+    return <div className="ProjectList">{projectBoxes}</div>;
 }

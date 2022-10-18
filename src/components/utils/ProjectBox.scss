@@ -6,6 +6,10 @@
     margin: 4rem 0;
     white-space: pre-line;
 
+    &:last-child {
+        margin-bottom: 0;
+    }
+
     .description {
         margin-left: 1rem;
 
