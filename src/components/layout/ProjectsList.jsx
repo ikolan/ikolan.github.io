@@ -12,7 +12,7 @@ export default function ProjectsList({ list }) {
                 })}
                 key={index}
             >
-                {projectData.description}
+                <p>{projectData.description}</p>
                 <br />
                 <br />
                 {projectData.links.map((linkData, index) => {

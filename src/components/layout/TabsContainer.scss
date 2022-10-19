@@ -1,6 +1,6 @@
 @import "../../style.scss";
 
-$transition: linear 250ms;
+$transition: ease-out 250ms;
 
 .TabsContainer {
     .tabsList {
@@ -14,6 +14,10 @@ $transition: linear 250ms;
 
             &:hover {
                 cursor: pointer;
+
+                &::after {
+                    width: 10px;
+                }
             }
 
             &::after {
@@ -37,5 +41,9 @@ $transition: linear 250ms;
                 }
             }
         }
+    }
+
+    .tabContent {
+        overflow: clip;
     }
 }

@@ -23,7 +23,7 @@ export default function TabsContainer({ children }) {
                     );
                 })}
             </div>
-            <div style={{ height: maxHeight + "px" }}>
+            <div className="tabContent" style={{ height: maxHeight + "px" }}>
                 {children.map((element, index) => {
                     return (
                         <div
